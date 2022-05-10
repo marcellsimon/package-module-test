@@ -1,0 +1,20 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Rule Proxy",
+  "main": "app.ts",
+  "author": "Marcell Simon<simon@nextleap.io>",
+  "scripts": {
+    "compile": "rm -rf built && yarn install && npx tsc && cp package.json built/package.json && cd built && yarn install --production",
+    "test": "mocha test/events/input.json"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    
+  },
+  "workspaces": [
+    "./common",
+    "./module1/lambda/project1"
+  ]
+}
