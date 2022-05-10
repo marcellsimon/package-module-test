@@ -5,20 +5,14 @@
   "main": "app.ts",
   "author": "Marcell Simon<simon@nextleap.io>",
   "scripts": {
-    "compile": "rm -rf built && npm install && npx tsc && cp package.json built/package.json && cd built && npm install --production",
-    "test": "mocha test/events/input.json"
+    "compile": "rm -rf built && npx tsc"
   },
   "dependencies": {
-    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.71",
-    "@types/libsodium-wrappers": "^0.7.9",
     "@types/node": "14.14.32",
-    "@types/uuid": "^8.3.1",
     "aws-sdk": "2.906.0",
-    "chai": "4.3.0",
-    "mocha": "8.2.1",
     "typescript": "4.1.3"
   }
 }

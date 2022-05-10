@@ -5,8 +5,6 @@
   "main": "index.ts",
   "author": "Marcell Simon<simon@nextleap.io>",
   "scripts": {
-    "compile": "rm -rf built && yarn install && npx tsc && cp package.json built/package.json && cd built && yarn install --production",
-    "test": "mocha test/events/input.json"
   },
   "dependencies": {
     "uuid": "^8.3.2"
